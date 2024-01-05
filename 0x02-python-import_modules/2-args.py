@@ -5,7 +5,7 @@ import sys
 if __name__ != "__main__":
     exit()
 
-argsnum = len(sys.argv) -1
+argsnum = len(sys.argv) - 1
 
 if argsnum <= 0:
     print("0 arguments.")
