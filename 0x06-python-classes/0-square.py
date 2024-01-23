@@ -6,6 +6,6 @@ Define a class Square.
 
 class Square():
     """
-    creates a Square class
+    Represents a Square
     """
     pass
