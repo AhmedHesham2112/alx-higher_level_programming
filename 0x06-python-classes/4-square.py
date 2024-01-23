@@ -4,9 +4,6 @@ Define a class Square.
 """
 
 
-from typing import Any
-
-
 class Square():
     """
     Represent a Square
