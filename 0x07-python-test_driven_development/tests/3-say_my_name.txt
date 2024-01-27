@@ -1,0 +1,23 @@
+Testing say_my_name Method
+==========================
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test Basic:
+    >>> say_my_name("Walter", "White")
+    My name is Walter White
+
+Test one input:
+    >>> say_my_name("Walter")
+    My name is Walter 
+
+Test Type:
+    >>> say_my_name(21, "Ahmed")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Ahmed", 21)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string

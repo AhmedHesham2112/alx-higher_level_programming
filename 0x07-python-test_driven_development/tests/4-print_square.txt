@@ -1,0 +1,31 @@
+Testing print_square Method
+===========================
+
+>>> print_square = __import__('4-print_square').print_square
+
+Test Basic:
+    >>> print_square(2)
+    ##
+    ##
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+Test Negative:
+    >>> print_square(-2)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+Test Type:
+    >>> print_square("Ahmed")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(-0.3)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer

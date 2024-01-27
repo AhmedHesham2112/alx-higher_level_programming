@@ -1,0 +1,21 @@
+Testing text_indentation Method
+===============================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test Basic:
+    >>> text_indentation(" Ahmed: How are you?     Amr: I'm good. ")
+    Ahmed:
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE> 
+    Amr:
+    <BLANKLINE>
+    I'm good.
+    <BLANKLINE>
+
+Test Type:
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
