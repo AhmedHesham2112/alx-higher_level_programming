@@ -1,0 +1,30 @@
+Testing add_integer Method
+============================
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Test Basic:
+    >>> add_integer(1, 2)
+    3
+    >>> add_integer(3, -1)
+    2
+    >>> add_integer(2.3, 3.7)
+    5
+
+Test One argument:
+    >>> add_integer(2)
+    100
+    >>> add_integer(-3,)
+    95
+
+Test b is not integer:
+    >>> add_integer(2,"Ahmed")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Test a is not integer:
+    >>> add_integer("Ahmed", 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
