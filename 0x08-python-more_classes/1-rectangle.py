@@ -7,11 +7,11 @@ class Rectangle():
 
     def __init__(self, width=0, height=0):
         """
-        initialized the width and height with 0, 0 or as given.
+        initialized the width and height with 0, 0 or as given
         
         Args:
-            width (int): width of the square.
-            hegiht (int): heghit of the square.
+            width (int): width of the square
+            hegiht (int): heghit of the square
         """
         self.height = height
         self.width = width
@@ -21,7 +21,7 @@ class Rectangle():
         """
         Get the current height of the rectangle.
         """
-        return(self.__height)
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -36,7 +36,7 @@ class Rectangle():
         """
         Get the current width of the rectangle.
         """
-        return(self.__width)
+        return self.__width
 
     @width.setter
     def width(self, value):
