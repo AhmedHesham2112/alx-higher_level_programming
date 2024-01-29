@@ -13,8 +13,8 @@ class Rectangle():
             width (int): width of the square
             hegiht (int): heghit of the square
         """
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
 
     @property
     def height(self):
@@ -37,4 +37,3 @@ class Rectangle():
     @width.setter
     def width(self, value):
         self.__width = value
-    
