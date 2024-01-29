@@ -116,8 +116,5 @@ class Rectangle():
         Attributes:
             cls : The parameter that points to the class
             size (int): The size of the square
-
-        Returns:
-            width = height = size
         """
         return cls(size, size)
