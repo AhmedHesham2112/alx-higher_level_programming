@@ -8,7 +8,6 @@ class Rectangle():
     def __init__(self, width=0, height=0):
         """
         initialized the width and height with 0, 0 or as given
-
         Args:
             width (int): width of the square
             hegiht (int): heghit of the square
