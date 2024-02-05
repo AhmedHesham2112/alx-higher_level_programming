@@ -16,7 +16,7 @@ class Square(Rectangle):
         self.__size = size
 
     def __str__(self):
-        """Return the print() and str() representation of a Rectangle."""
+        """Return the print() and str() representation of a Square."""
         string = "[Square] "
         string += str(self.__size) + "/" + str(self.__size)
         return string
