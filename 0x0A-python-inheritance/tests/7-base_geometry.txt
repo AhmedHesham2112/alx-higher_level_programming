@@ -1,0 +1,29 @@
+Test for 7-base_geometry.py
+===========================
+
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+Test a non-integer argument
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", "ahmed")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+Test a negative value:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", -1)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+Test a zero value:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 0)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+Test a positive value:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 5)
