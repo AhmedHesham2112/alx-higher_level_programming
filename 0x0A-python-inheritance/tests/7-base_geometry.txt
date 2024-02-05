@@ -56,6 +56,12 @@ Test tuple to integer_validator
     	      ...
     TypeError: age must be an integer
 
+Test a boolean value to integer_validator:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", True)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
 
 Test list to integer_validator
     >>> bg = BaseGeometry()
