@@ -49,6 +49,36 @@ Test three arguments to integer_validator:
     	      ...
     TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
+Test tuple to integer_validator
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    	      ...
+    TypeError: age must be an integer
+
+
+Test list to integer_validator
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("age", [3])
+    Traceback (most recent call last):
+    	      ...
+    TypeError: age must be an integer
+
+
+Test dict to integer_validator
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("age", {3, 4})
+    Traceback (most recent call last):
+              ...
+    TypeError: age must be an integer
+
+Test None to integer_validator
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("age", None)
+    Traceback (most recent call last):
+              ...
+    TypeError: age must be an integer
+
 Trying to print the area
     >>> bg = BaseGeometry()
     >>> bg.area()
