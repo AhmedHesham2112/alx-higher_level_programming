@@ -23,10 +23,10 @@ class Rectangle(Base):
             ValueError: If either of x or y < 0.
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -133,26 +133,26 @@ class Rectangle(Base):
                 if a == 0:
                     self.id = arg
                 elif a == 1:
-                    self.__width = arg
+                    self.width = arg
                 elif a == 2:
-                    self.__height = arg
+                    self.height = arg
                 elif a == 3:
-                    self.__x = arg
+                    self.x = arg
                 elif a == 4:
-                    self.__y = arg
+                    self.y = arg
                 a += 1
         elif kwargs is not None and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
                     self.id = v
                 elif k == "width":
-                    self.__width = v
+                    self.width = v
                 elif k == "height":
-                    self.__height = v
+                    self.height = v
                 elif k == "x":
-                    self.__x = v
+                    self.x = v
                 elif k == "y":
-                    self.__y = v
+                    self.y = v
 
     def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""
