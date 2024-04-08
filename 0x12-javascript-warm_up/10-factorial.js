@@ -1,10 +1,13 @@
 #!/usr/bin/node
-if (isNaN(process.argv[2]) || process.argv[2] === undefined) {
-  console.log(1);
-} else {
-  let n = 1;
-  for (let i = 1; i <= parseInt(process.argv[2]); i++) {
-  n = n * i;
+
+function factorial (n) {
+  if (n < 0) {
+    return (-1);
   }
-  console.log(n);
+  if (n === 0 || isNaN(n)) {
+    return (1);
+  }
+  return (n * factorial(n - 1));
 }
+
+console.log(factorial(parseInt(process.argv[2])))
