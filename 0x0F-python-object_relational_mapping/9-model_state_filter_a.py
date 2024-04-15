@@ -17,4 +17,4 @@ if __name__ == "__main__":
         State.name.like('%a%'))
     for state in results:
         print("{}: {}".format(state.id, state.name))
-    session.close() 
+    session.close()
