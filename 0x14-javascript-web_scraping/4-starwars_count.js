@@ -2,9 +2,7 @@
 const request = require('request');
 const url = `${process.argv[2]}`;
 request.get(url, (err, res, body) => {
-  if (err) {
-    return console.log(err);
-  } else {
+  if (!err) {
     const films = JSON.parse(body).results;
     let count = 0;
     films.forEach(film => {
